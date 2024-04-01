@@ -1,1 +1,1 @@
-# Quant-Research-Project--Siddhartha-Das
+# Quant Research Project-Siddhartha Das
