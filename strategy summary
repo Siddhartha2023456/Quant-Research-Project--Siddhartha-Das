@@ -1,1 +1,33 @@
-Write about 3 strategies
+1.Z Score Strategy: Firstly I have used Z score strategy for pairs trading as asked.Here, I have taken threshold value of 2 as it was tested optimum.
+We have also assumed a risk free rate of 0.01 for calculating Sharpe ratio.
+After implementing we have got a Sharpe Ratio of -0.1961.
+We have got Absolute Profit-loss of -19816.96(loss)
+We have got the drawdown of -19869.235
+
+2.Bollinger Band Strategy: Here, I have employed Bollinger band strategy for pairs trading.
+Bollinger band strategy consists of a middle band, which is a simple moving average (typically of 20 periods), and two outer bands that are calculated by adding and subtracting a multiple of the standard deviation from the middle band.
+So, when the spread is greater than the upper band we short the overvalued trades and long the undervalued and conversely when the spread is less than the lower band, we long the overvalued trades and short undervalued.
+Here, by implementing this strategy, we have got a bit of better result than Z score trading.
+Here also,We have assumed a risk free rate of 0.01 for calculating Sharpe ratio.
+Sharpe Ratio: -0.0030252545535649393
+Absolute Profit-Loss: 269.2541689439011(profit)
+Drawdown: -323.11172083038304
+
+3.Percentage Based Strategy: Here, I have used a percentage based strategy for pairs trading between bank nifty and nifty.
+In this strategy, I have first calculated the difference between maximum and minimum spread between bank nifty and nifty.Then,I have used 75% of that difference as upper band threshold and 25% of that difference as lower band threshold.
+and when the spread is greater than the upper band we short the overvalued trades and long the undervalued and conversely when the spread is less than the lower band, we long the overvalued trades and short undervalued.
+By implementing this strategy, we have got much better results.
+Similarly here also,We have assumed a risk free rate of 0.01 for calculating Sharpe ratio.
+Sharpe Ratio: 0.49620142670580286
+Absolute Profit-Loss: 50206.71846674799(Profit)
+Drawdown: -512.2090897410
+
+Comparison: Here, the above 3 strategies are compared based on the performance metrics(Sharpe ratio, Absolute Profit-loss, Drawdown).
+Sharpe Ratio(Percentage based) > Sharpe ratio(Bollinger Band) > Sharpe ratio(Z score)
+So, Percentage based strategy is optimum based on Sharpe ratio.
+Absolute Profit-loss(Percentage based) > Absolute Profit-loss(Bollinger Band) > Absolute Profit-loss(Z score)
+So, here also Percentage based strategy outperforms the other two.
+Drawdown(Bollinger Band) > Drawdown(Percentage based) > Drawdown(Z score)
+Here, Bollinger band strategy works best.
+So Overall, Percentage based strategy performs optimally for pairs trading between Bank Nifty and Nifty.
+
